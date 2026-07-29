@@ -1,7 +1,10 @@
 body {
     font-family: "Montserrat", sans-serif;
+    background-image: url('images/ruliff.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
-
 .zagolovok {
     font-size: 60px;
     text-align: center;
@@ -54,7 +57,7 @@ body {
     margin-right: 10px;
 }
 
-.stoimost {
+.price-tag {
     font-size: 28px;
     color: #4b4b72;
     font-weight: 700;
@@ -62,3 +65,12 @@ body {
 .kartinka {
     margin-bottom: 20px;
 }
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Homework 3 */
