@@ -1,76 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
+    color: #515076;
     background-image: url('images/bg-1.png');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
 }
-.zagolovok {
-    font-size: 60px;
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.catalog__title {
     text-align: center;
-    color: #4b4b72;
+    font-size: 60px;
     font-weight: 400;
-    
-}
-
-.kartochka {
-    background-color: #F7F7FA;
-    padding: 20px;
-    margin-bottom: 30px;
-    width: 295px;
-}
-.tip-koji {
-    font-size: 14px;
-    color: #8f8f8f;
-}
-
-.nazvanie {
-    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 110px;
     color: #4b4b72;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.product {
+    background-color: #F7F7FA;
+    padding: 25px;
+    width: 340px;
+}
+
+.product__image {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.product__category {
+    font-size: 12px;
+    line-height: 24px;
+    color: #a5a3b9;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.product__title {
+    font-size: 32px;
     font-weight: 700;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.opisanie {
+.product__description {
     font-size: 18px;
     color: #666666;
     margin-bottom: 20px;
 }
 
-.sostav {
+.product__compound {
+    margin-bottom: 20px;
+}
+
+.product__compound-name {
+    display: block;
     font-size: 18px;
-    color: #4b4b72;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.spisok {
+.product__compound-list {
+    padding-left: 15px;
+}
+
+.product__compound-list li {
+    list-style-type: circle;
     font-size: 16px;
     color: #666666;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
-.price {
+.product__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__price-label {
     font-size: 24px;
-    color: #4b4b72;
-    margin-right: 10px;
 }
 
-.price-tag {
+.product__price-value {
     font-size: 28px;
-    color: #4b4b72;
     font-weight: 700;
 }
-.kartinka {
-    margin-bottom: 20px;
-}
-.catalog {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-/* Homework 3 */
