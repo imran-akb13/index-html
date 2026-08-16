@@ -23,15 +23,16 @@ const productName = "Наушники";
 const productPrice = 3500;
 
 const buyProduct = (budget) => {
-  if (budget > productPrice) {
-    console.log(`${productName} приобретён. Спасибо за покупку!`);
+  if (budget >= productPrice) {
+    const change = budget - productPrice;
+    console.log(`${productName} приобретён. Спасибо за покупку! Сдача: ${change}$`);
   } else {
     const missingMoney = productPrice - budget;
     console.log(`Вам не хватает ${missingMoney}$, пополните баланс`);
   }
 };
 
-buyProduct(3000);
+buyProduct(3500);
 
 const calculateDifference = (firstNumber, secondNumber) => {
   console.log(firstNumber - secondNumber);
